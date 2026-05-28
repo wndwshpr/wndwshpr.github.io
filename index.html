@@ -88,7 +88,7 @@
         .download-section {
             display: flex;
             flex-direction: column;
-            gap: clamp(10px, 2vmin, 20px);
+            gap: clamp(5px, 1vmin, 10px);
             align-items: center;
         }
         
@@ -107,6 +107,16 @@
         
         .store-badge:hover img {
             transform: scale(1.05);
+        }
+        
+        .store-badge.apple-badge {
+            width: clamp(191px, 34.68vmin, 433.5px);
+        }
+        
+        .store-badge.apple-badge img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
         }
         
         .ios-coming-soon {
@@ -218,7 +228,9 @@
             <a href="https://play.google.com/store/apps/details?id=com.windowshopper.smartshopping" class="store-badge" target="_blank" rel="noopener noreferrer">
                 <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
             </a>
-            <p class="ios-coming-soon">iOS version coming soon</p>
+            <a href="https://apps.apple.com/zw/app/windowshopper/id6765528665" class="store-badge apple-badge" target="_blank" rel="noopener noreferrer">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+            </a>
         </div>
         
         <div class="nav-links">
