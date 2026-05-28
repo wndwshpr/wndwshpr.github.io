@@ -6,55 +6,237 @@
     <title>Privacy Policy - WindowShopper</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background: #f5f5f5;
-        }
-        .container {
             max-width: 800px;
             margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            color: #333;
         }
-        h1, h2 {
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
+        .last-updated {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        strong {
             color: #2c3e50;
         }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #007bff;
-            text-decoration: none;
+        .highlight {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
         }
-        .back-link:hover {
-            text-decoration: underline;
+        .contact {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .warning {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <a href="/" class="back-link">← Back to Home</a>
-        
-        <h1>Privacy Policy</h1>
-        <p><strong>Last updated:</strong> March 14, 2026</p>
+    <h1>Privacy Policy for WindowShopper</h1>
+    <p class="last-updated"><strong>Last Updated:</strong> 23 February 2026</p>
 
-        <h2>Information We Collect</h2>
-        <p>WindowShopper collects information you provide directly to us, such as when you create an account, use our services, or contact us for support.</p>
+    <h2>Introduction</h2>
+    <p>WindowShopper ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
 
-        <h2>How We Use Your Information</h2>
-        <p>We use the information we collect to provide, maintain, and improve our services, process transactions, and communicate with you.</p>
+    <h2>Information We Collect</h2>
 
-        <h2>Information Sharing</h2>
-        <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy.</p>
+    <h3>Information You Provide</h3>
+    <ul>
+        <li><strong>Account Information:</strong> Name, email address, phone number, profile picture</li>
+        <li><strong>Authentication:</strong> Email/password or OAuth (Google, Apple) for sign-in</li>
+        <li><strong>Store Information:</strong> Store name, address, location coordinates, business hours, contact details, bio</li>
+        <li><strong>Product Information:</strong> Product names, prices, descriptions, images</li>
+        <li><strong>Receipt Data:</strong> Store names, purchase dates, item names, prices from scanned receipts</li>
+        <li><strong>Shopping Lists:</strong> Product names, quantities, preferences</li>
+        <li><strong>Reports:</strong> User-submitted reports for stores or products (moderation purposes)</li>
+    </ul>
 
-        <h2>Data Security</h2>
-        <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+    <h3>Automatically Collected Information</h3>
+    <ul>
+        <li><strong>Location Data:</strong> GPS coordinates to show nearby stores and calculate distances</li>
+        <li><strong>Device Information:</strong> Device type, operating system, unique device identifiers</li>
+        <li><strong>Usage Data:</strong> App features used, screens viewed, time spent in app, search queries</li>
+        <li><strong>Analytics Data:</strong> Product views, store visits, search patterns (anonymized for improvement)</li>
+        <li><strong>Camera Access:</strong> Used only when you scan receipts or upload product images</li>
+    </ul>
 
-        <h2>Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us through the app or our support channels.</p>
+    <h3>Information from Third Parties</h3>
+    <ul>
+        <li><strong>OAuth Providers:</strong> If you sign in with Google or Apple, we receive your name, email, and profile picture from those services</li>
+        <li><strong>OpenStreetMap:</strong> Map tile data (no personal information shared with OSM)</li>
+    </ul>
+
+    <h2>How We Use Your Information</h2>
+    <p>We use collected information to:</p>
+    <ul>
+        <li>Provide and maintain the app's core functionality</li>
+        <li>Authenticate your account (email/password or OAuth)</li>
+        <li>Show nearby stores based on your location using OpenStreetMap</li>
+        <li>Match products across stores for price comparison</li>
+        <li>Process and display scanned receipts using AI (Google Gemini)</li>
+        <li>Manage your shopping lists and preferences</li>
+        <li>Calculate optimal routes between stores using OSRM routing</li>
+        <li>Enable store owners to manage their products and view analytics</li>
+        <li>Handle user reports and content moderation</li>
+        <li>Improve app performance and user experience</li>
+        <li>Send in-app notifications about app features (no push notifications currently)</li>
+        <li>Prevent fraud and ensure security</li>
+        <li>Comply with legal obligations</li>
+    </ul>
+
+    <h2>Data Sharing and Disclosure</h2>
+
+    <h3>We Share Data With:</h3>
+    <ul>
+        <li><strong>Supabase:</strong> Our backend infrastructure provider (database, authentication, file storage)</li>
+        <li><strong>OpenStreetMap:</strong> For map tiles and location display (no personal data shared - OSM doesn't track users)</li>
+        <li><strong>OSRM (Open Source Routing Machine):</strong> For route calculations (no personal data shared)</li>
+        <li><strong>Google Gemini:</strong> For AI-powered receipt text extraction only</li>
+        <li><strong>OAuth Providers:</strong> Google and Apple for authentication (only if you choose to use OAuth login)</li>
+    </ul>
+
+    <div class="highlight">
+        <h3>We Do NOT:</h3>
+        <ul>
+            <li>Sell your personal information to third parties</li>
+            <li>Share your data with advertisers (no ads currently in app)</li>
+            <li>Share your location data with anyone except as needed for map display</li>
+            <li>Use your data for purposes other than stated here</li>
+            <li>Track you across other apps or websites</li>
+        </ul>
     </div>
+
+    <h3>We May Disclose Data:</h3>
+    <ul>
+        <li>When required by law or legal process</li>
+        <li>To protect our rights, property, or safety</li>
+        <li>With your explicit consent</li>
+        <li>In connection with a business transfer or acquisition</li>
+    </ul>
+
+    <h2>Data Storage and Security</h2>
+    <ul>
+        <li>Data is stored on secure servers provided by Supabase</li>
+        <li>We use encryption for data transmission (HTTPS/TLS)</li>
+        <li>Access to personal data is restricted to authorized personnel</li>
+        <li>We implement industry-standard security measures</li>
+        <li>However, no method of transmission over the internet is 100% secure</li>
+    </ul>
+
+    <h2>Your Rights and Choices</h2>
+    <p>You have the right to:</p>
+    <ul>
+        <li><strong>Access:</strong> Request a copy of your personal data</li>
+        <li><strong>Correction:</strong> Update or correct inaccurate information</li>
+        <li><strong>Deletion:</strong> Request deletion of your account and data</li>
+        <li><strong>Opt-Out:</strong> Disable location services or analytics tracking</li>
+        <li><strong>Data Portability:</strong> Export your data in a machine-readable format</li>
+    </ul>
+    <p>To exercise these rights, contact us at techromul@gmail.com</p>
+
+    <h2>Location Data</h2>
+    <div class="warning">
+        <ul>
+            <li>Location data is used only when the app is open (foreground only)</li>
+            <li>We use your location to:
+                <ul>
+                    <li>Show nearby stores on the map</li>
+                    <li>Calculate distances to stores</li>
+                    <li>Provide navigation directions</li>
+                </ul>
+            </li>
+            <li>You can disable location services in your device settings</li>
+            <li>Disabling location will limit map and nearby store features</li>
+            <li>We do not track your location in the background</li>
+            <li>Location data is not shared with third parties except OpenStreetMap for map display</li>
+        </ul>
+    </div>
+
+    <h2>Children's Privacy</h2>
+    <p>WindowShopper is not intended for children under 13. We do not knowingly collect data from children. If you believe a child has provided us with personal information, please contact us.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy periodically. We will notify you of significant changes through:</p>
+    <ul>
+        <li>In-app notifications</li>
+        <li>Email notifications</li>
+        <li>Updated "Last Updated" date at the top of this policy</li>
+    </ul>
+    <p>Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>Data Retention</h2>
+    <ul>
+        <li><strong>Account data:</strong> Retained until you delete your account</li>
+        <li><strong>Receipt data:</strong> Retained for analytics and price tracking</li>
+        <li><strong>Shopping lists:</strong> Retained until you delete them</li>
+        <li><strong>Analytics data:</strong> Anonymized and retained indefinitely</li>
+        <li><strong>Deleted data:</strong> Permanently removed within 30 days</li>
+    </ul>
+
+    <h2>International Data Transfers</h2>
+    <p>Your data may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place for such transfers.</p>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have questions about this Privacy Policy or our data practices:</p>
+        <p><strong>Email:</strong> techromul@gmail.com<br>
+        <strong>App:</strong> Settings > About > Privacy Policy</p>
+    </div>
+
+    <h2>Third-Party Services</h2>
+    <p>We use the following third-party services:</p>
+    <ul>
+        <li><strong>Supabase:</strong> Database, authentication, and file storage (<a href="https://supabase.com/privacy" target="_blank">Privacy Policy</a>)</li>
+        <li><strong>OpenStreetMap:</strong> Map tiles and location services (<a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">Privacy Policy</a>)
+            <br><em>Note: OSM is a non-profit that doesn't track users or collect personal data</em></li>
+        <li><strong>OSRM:</strong> Route calculation service (<a href="https://project-osrm.org/" target="_blank">Website</a>)
+            <br><em>Note: OSRM is open-source and doesn't collect personal data</em></li>
+        <li><strong>Google Gemini:</strong> AI receipt text extraction (<a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>)
+            <br><em>Only receipt images are sent to Gemini for processing</em></li>
+        <li><strong>Google OAuth:</strong> Optional sign-in method (<a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>)</li>
+        <li><strong>Apple Sign In:</strong> Optional sign-in method (<a href="https://www.apple.com/legal/privacy/" target="_blank">Privacy Policy</a>)</li>
+    </ul>
+    <p>Each service has its own privacy policy governing their use of your data.</p>
+
+    <h3>Why We Use These Services</h3>
+    <ul>
+        <li><strong>Supabase:</strong> Provides secure, scalable backend infrastructure</li>
+        <li><strong>OpenStreetMap:</strong> Free, open-source maps with no user tracking</li>
+        <li><strong>OSRM:</strong> Free, open-source routing with no user tracking</li>
+        <li><strong>Google Gemini:</strong> Industry-leading AI for accurate receipt scanning</li>
+        <li><strong>OAuth Providers:</strong> Convenient, secure sign-in options</li>
+    </ul>
+
+    <h2>Your Consent</h2>
+    <p>By using WindowShopper, you consent to this Privacy Policy and agree to its terms.</p>
+
 </body>
 </html>
